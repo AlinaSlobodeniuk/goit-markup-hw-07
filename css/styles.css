@@ -44,6 +44,8 @@ img {
     padding-bottom: 94px;
 }
 
+ul{list-style: none;}
+
 .visually-hidden{
     position: absolute;
     white-space: nowrap;
@@ -58,29 +60,25 @@ img {
 }
 
 /* Шапка */
-
-.header>.container{
-    display: flex;
-   
-    
-}
-
-.container>.card-list-contact{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;}
-
-ul{list-style: none;}
-
 .header{
     background-color: var(--color-background);
     border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
-nav{
+.header__container{
+    display: flex; 
+}
+
+.header__nav{
     flex-wrap: wrap;
     display: flex;
     align-items: center;
+    margin-bottom: -1px;
+}
+
+.header__logo{
+    margin-right: 93px;
+    margin-left: 0;
 }
 
 .logo{
@@ -91,19 +89,15 @@ nav{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-right: 93px;
-    margin-left: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-
-
-.logo-accent{
+.logo__accent{
     color: var(--color-accent);
 }
 
-.card-list{
+.header__list{
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -117,47 +111,26 @@ nav{
     gap: 50px;
 }
 
-.header-item>a{
+.header__link{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
 }
 
-.card-list-contact{
-    list-style: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    gap: 50px;
-}
+.header__link:hover{color:var(--color-accent)}
 
+.header__link:focus{color:var(--color-accent)}
 
-
-.link-item{
-    text-decoration: none;
-    color: var(--text-color);
-    transition: color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
-   
-}
-
-
-.link-item:hover{color:var(--color-accent)}
-
-.link-item:focus{color:var(--color-accent)}
-
-.current-link-item{
+.header__current-link{
     text-decoration: none;
     color: var(--color-accent);
    height: 48px;
 }
-.current-link-item::after{
+
+.header__current-link::after{
     content: '';
     display: block;
     width: 100%;
@@ -165,15 +138,28 @@ nav{
     background-color: currentColor;
     border-radius: 2px;
     margin-top: 28px;
-
 }
 
-.contact-icon{
-    fill: currentColor;
-    margin-right: 10px;
+.header__contact{
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 50px;
 }
 
-.link-contact-item{
+.contact{
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+}
+
+.contact__item{
     text-decoration: none;
     color: var(--text-color-optional);
     display: flex;
@@ -182,9 +168,14 @@ nav{
     transition: color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.link-contact-item:hover{color:var(--color-accent)}
+.contact__item:hover{color:var(--color-accent)}
 
-.link-contact-item:focus{color:var(--color-accent)}
+.contact__item:focus{color:var(--color-accent)}
+
+.contact__icon{
+    fill: currentColor;
+    margin-right: 10px;
+}
 
 /* hero  */
 
@@ -193,9 +184,6 @@ nav{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
-
-.section.hero{
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: #c4c4c4;
@@ -207,7 +195,7 @@ nav{
     margin: auto;
 }
 
-.hero-title{
+.hero__title{
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -219,7 +207,7 @@ nav{
     margin: 0 auto 30px;
 }
 
-.hero-button{
+.hero__button{
     background-color: var(--color-accent);
     font-weight: 700;
     font-size: 16px;
@@ -234,7 +222,7 @@ nav{
     transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:active{
+.hero__button:active{
     background-color: #188CE8;
 }
 
@@ -258,7 +246,7 @@ margin-bottom: 30px;
 }
 
 
-.card>.card-item{
+.card-item{
    width: 270px;
 }
 
