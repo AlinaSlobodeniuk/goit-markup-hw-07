@@ -124,13 +124,13 @@ ul{list-style: none;}
 
 .header__link:focus{color:var(--color-accent)}
 
-.header__current-link{
+.header__link--current{
     text-decoration: none;
     color: var(--color-accent);
    height: 48px;
 }
 
-.header__current-link::after{
+.header__link--current::after{
     content: '';
     display: block;
     width: 100%;
