@@ -1,0 +1,27 @@
+.card__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-background-color);
+    border-radius: 4px;
+    height: 120px;
+    margin-bottom: 30px;
+    }
+    
+    .card__subtitle{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    
+    .card__paragraph{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7; 
+        letter-spacing: 0.03em;    
+        color: var(--text-color-optional);
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
