@@ -3,11 +3,7 @@
     display: flex;
     
     &__title{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        text-align: center;
+        @include title;
         margin-bottom: 50px;
     }
     &__card{
