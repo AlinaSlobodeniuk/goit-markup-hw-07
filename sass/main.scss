@@ -1,16 +1,16 @@
 @import './utils/base';
 @import './utils/utils';
 @import './utils/variables';
-
+@import './utils/mixins';
 
 @import './components/activity';
 @import './components/address';
 @import './components/advantages-card';
 @import './components/advantages';
 @import './components/backdrop';
-@import './components/button-filter';
 @import './components/contact';
 @import './components/container';
+@import './components/customers';
 @import './components/footer';
 @import './components/header';
 @import './components/hero';
@@ -20,8 +20,8 @@
 @import './components/our-team';
 @import './components/overlay';
 @import './components/portfolio';
-@import './components/regular-customers';
 @import './components/section-third';
 @import './components/social-list';
 @import './components/social-networks';
 @import './components/team';
+@import './components/filter';

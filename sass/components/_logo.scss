@@ -8,8 +8,8 @@
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
-}
-
-.logo__accent{
+    
+    &__accent{
     color: var(--color-accent);
+}
 }

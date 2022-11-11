@@ -1,12 +1,14 @@
-.advantages__card{
+.advantages{
     margin: 0;
     display: flex;
     padding: 0;
     list-style: none;
-}
+    
+    &__item{
+        width: 270px;
+    }
 
-.advantages__item{
-   width: 270px;
+    &__item:not(:last-child){
+        margin-right: 30px;
+    }
 }
-
-.advantages__item:not(:last-child){margin-right: 30px;}

@@ -1,4 +1,4 @@
-.card__box{
+.card{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,9 +6,8 @@
     border-radius: 4px;
     height: 120px;
     margin-bottom: 30px;
-    }
     
-    .card__subtitle{
+    &__subtitle{
         font-weight: 700;
         font-size: 14px;
         line-height: 1.1;
@@ -16,7 +15,7 @@
         text-transform: uppercase;
     }
     
-    .card__paragraph{
+    &__paragraph{
         font-weight: 400;
         font-size: 14px;
         line-height: 1.7; 
@@ -25,3 +24,5 @@
         margin-top: 10px;
         margin-bottom: 0;
     }
+    }
+    

@@ -7,9 +7,8 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
-}
-
-.modal__close-button{
+    
+    &__close-button{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -27,19 +26,11 @@
   
 }
 
-.modal__close-icon{
+&__close-icon{
     transition: fill var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close-button:hover .modal__close-icon{
-    fill: var(--color-accent)
-}
-
-.modal__close-button:focus .modal__close-icon{
-    fill: var(--color-accent)
-}
-
-.modal__title{
+&__title{
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -50,7 +41,7 @@
     margin-bottom: 12px;
 }
 
-.modal__label{
+&__label{
     display: block;
     font-weight: 400;
     font-size: 12px;
@@ -61,13 +52,13 @@
 
 }
 
-.modal__control{
+&__control{
     position: relative;
     margin-bottom: 10px;
     
 }
 
-.modal__input{
+&__input{
     display: flex;
     width: 100%;
     margin-bottom: 10px;
@@ -76,9 +67,13 @@
     outline: none;
     padding: 12px 12px 12px 32px;
     transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus{
+    border-color: var(--color-accent);
+}
 }
 
-.modal__icon{
+&__icon{
     position: absolute;
     top: 50%;
     left: 12px;
@@ -87,15 +82,7 @@
     transition: fill var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input:focus{
-    border-color: var(--color-accent);
-}
-
-.modal__control:focus-within .modal__icon{
-    fill: var(--color-accent);
-}
-
-.modal__textarea{
+&__textarea{
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -110,40 +97,31 @@
     margin-bottom: 20px;
     outline: none;
     transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__textarea:focus{
+    &:focus{
     border-color: var(--color-accent);
 }
+}
 
-.modal__checkbox{
+&__checkbox{
     position: absolute;
     left: 52px;
     top: 458px;
    
 }
 
-.modal__checkbox-input{
+&__checkbox-input{
     appearance: none;
     transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__checkbox:focus-within.modal__checkbox-icon{
-    border-color: var(--color-accent)
-}
-
-.modal__checkbox-icon{
+&__checkbox-icon{
     border: 2px solid var(--text-color);
     border-radius: 1px;
     transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1), border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__checkbox-input:checked + .modal__checkbox-icon{
-    background-color: var(--color-accent);
-    border: none;
-}
-
-.modal__checkbox-label{
+&__checkbox-label{
     position: relative;
     padding-left: 28px;
     font-weight: 400;
@@ -154,11 +132,11 @@
     left: 8px;
 }
 
-.modal__checkbox-link{
+&__checkbox-link{
     color: var(--color-accent);
 }
 
-.modal__button{
+&__button{
     width: 200px;
     height: 50px;
     margin: 10px auto 0 auto;
@@ -177,8 +155,37 @@
     justify-content: center;
     color: var(--color-background);
     transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__button:hover{
+    &:hover{
     background-color: var(--color-hover);
 }
+}
+
+}
+
+
+
+
+
+.modal__close-button:hover .modal__close-icon{
+    fill: var(--color-accent)
+}
+
+.modal__close-button:focus .modal__close-icon{
+    fill: var(--color-accent)
+}
+
+.modal__control:focus-within .modal__icon{
+    fill: var(--color-accent);
+}
+
+.modal__checkbox:focus-within.modal__checkbox-icon{
+    border-color: var(--color-accent)
+}
+
+.modal__checkbox-input:checked + .modal__checkbox-icon{
+    background-color: var(--color-accent);
+    border: none;
+}
+
+

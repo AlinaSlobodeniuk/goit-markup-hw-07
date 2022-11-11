@@ -7,10 +7,10 @@
     height: 100%;
     z-index: 1;
     transition: opacity var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop__modal{
+    &__modal{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    }
 }
