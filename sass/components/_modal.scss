@@ -9,156 +9,135 @@
     padding: 40px;
     
     &__close-button{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 8px;
-    right: 8px;
-    background-color: var(--color-background);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    fill: var(--black-color);
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 8px;
+        background-color: var(--color-background);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        fill: var(--black-color);
   
 }
 
-&__close-icon{
-    transition: fill var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    &__close-icon{
+        transition: fill var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__title{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 2px;
-    margin-bottom: 12px;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-top: 2px;
+        margin-bottom: 12px;
 }
 
-&__label{
-    display: block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;   
-    letter-spacing: 0.01em;
-    color: var(--text-color-optional);
-    margin-bottom: 4px;
+    &__label{
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;   
+        letter-spacing: 0.01em;
+        color: var(--text-color-optional);
+        margin-bottom: 4px;
 
 }
 
-&__control{
-    position: relative;
-    margin-bottom: 10px;
+    &__control{
+        position: relative;
+        margin-bottom: 10px;
     
 }
 
-&__input{
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: none;
-    padding: 12px 12px 12px 32px;
-    transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    &__input{
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+        padding: 12px 12px 12px 32px;
+        transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus{
-    border-color: var(--color-accent);
+        &:focus{
+            border-color: var(--color-accent);
 }
 }
 
-&__icon{
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    fill: currentcolor;
-    transition: fill var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    &__icon{
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        fill: currentcolor;
+        transition: fill var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__textarea{
-    width: 100%;
-    height: 120px;
-    padding: 12px 16px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    color: rgba(117, 117, 117, 0.5);
-    resize: none;
-    margin-bottom: 20px;
-    outline: none;
-    transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    &__textarea{
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        color: rgba(117, 117, 117, 0.5);
+        resize: none;
+        margin-bottom: 20px;
+        outline: none;
+        transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus{
-    border-color: var(--color-accent);
+        &:focus{
+            border-color: var(--color-accent);
 }
 }
 
-&__checkbox{
-    position: absolute;
-    left: 52px;
-    top: 458px;
-   
+    &__button{
+        width: 200px;
+        height: 50px;
+        margin: 10px auto 0 auto;
+        background: var(--color-accent);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: var(--color-background);
+        transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover{
+            background-color: var(--color-hover);
+}
 }
 
-&__checkbox-input{
-    appearance: none;
-    transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    &__close-button:hover .modal__close-icon{
+        fill: var(--color-accent)
 }
 
-&__checkbox-icon{
-    border: 2px solid var(--text-color);
-    border-radius: 1px;
-    transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1), border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    &__close-button:focus .modal__close-icon{
+        fill: var(--color-accent)
 }
 
-&__checkbox-label{
-    position: relative;
-    padding-left: 28px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--text-color-optional);
-    left: 8px;
-}
-
-&__checkbox-link{
-    color: var(--color-accent);
-}
-
-&__button{
-    width: 200px;
-    height: 50px;
-    margin: 10px auto 0 auto;
-    background: var(--color-accent);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: var(--color-background);
-    transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover{
-    background-color: var(--color-hover);
-}
+    &__control:focus-within .modal__icon{
+        fill: var(--color-accent);
 }
 
 }
@@ -166,26 +145,5 @@
 
 
 
-
-.modal__close-button:hover .modal__close-icon{
-    fill: var(--color-accent)
-}
-
-.modal__close-button:focus .modal__close-icon{
-    fill: var(--color-accent)
-}
-
-.modal__control:focus-within .modal__icon{
-    fill: var(--color-accent);
-}
-
-.modal__checkbox:focus-within.modal__checkbox-icon{
-    border-color: var(--color-accent)
-}
-
-.modal__checkbox-input:checked + .modal__checkbox-icon{
-    background-color: var(--color-accent);
-    border: none;
-}
 
 
