@@ -815,10 +815,6 @@ ul {
   list-style: none;
 }
 
-.overlay {
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
-}
 .overlay__link {
   display: block;
   text-decoration: none;
@@ -928,6 +924,8 @@ ul {
   margin-top: -30px;
 }
 .portfolio__item {
+  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
+      flex-basis: calc(33.3333333333% - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
